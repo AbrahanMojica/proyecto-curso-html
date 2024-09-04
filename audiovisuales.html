@@ -1,0 +1,138 @@
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv ="X-UA-Compatible" content ="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atardecer</title>
+        <meta name = "author" content="Abrahan Mojica">
+        <meta name = "description"  content = "proyecto en html ">
+        <meta name = "keyword" content = "portafolio, crecer, cv">
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="shortcut icon" href="iconos/atardecer.png">
+
+        <style>
+            body {
+                font-family: "Lucida Console", "Courier New", monospace;
+                background: linear-gradient(#d0441e, #ffffff);
+                padding: 0;
+                margin: 0;
+            }
+        
+            header {
+                text-align: center;
+            }
+        
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #000000;
+            }
+        
+            li {
+                float: left;
+            }
+        
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+        
+            li a:hover:not(.active) {
+                background-color: #cc3010;
+            }
+        
+            .active {
+                background-color: #cc3010;
+            }
+        
+            h1 {
+                background-color: #cc3010;
+                padding: 10px;
+                margin: 0;
+                color: #92a4ff;
+            }
+        
+            h2 {
+                font-size: 24px;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .image{
+            position: absolute; 
+            top: 115px; right: 0; width: 300px; height: auto;
+            }
+           .audio{ 
+            top: 200px; right: 500px; width: 300px;
+           }
+
+            p {
+                font-size: 16px;
+                line-height: 2;
+                margin-bottom: 15%;
+            }
+        
+            .footer {
+                background-color: #cc3010;;
+                color: #FFF;
+                padding: 10px;
+                text-align: center;
+                clear: both;
+                margin-top: 180px;
+            }
+            </style>
+
+
+
+    </head>
+
+
+    
+    <body>
+
+    <header>
+        <h1>Atardecer</h1>
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="participa.html">Participa</a></li>
+            </ul>
+            </nav>
+        <hr>
+    </header>
+
+    <section style="display: flex; justify-content: space-between;">
+        <!-- Video y audio a la izquierda -->
+        <div style="text-align: center;">
+            <video controls muted autoplay width="200px" poster="assets/atardecer1.jpg">
+                <source src="assets/Atardecer.mp4">
+            </video>
+            <audio controls muted autoplay style="display: block; margin-top: 10px;">
+                <source src="assets/au1.mp3">
+            </audio>
+        </div>
+        
+
+        <img src="assets/sol.jpg" width="500px">
+
+
+        <!-- Imagen y audio a la derecha -->
+        <div style="text-align: center;">
+            <img src="assets/atardecer1.jpg" width="200px" class="image">
+            <audio controls muted autoplay style="display: block; margin-top: 250px;">
+                <source src="assets/au2.mp3">
+            </audio>
+        </div>
+    </section>   
+    
+
+    <footer class="footer"> Derechos reservados &copy;2024 </footer>
+</body>
+</html>
